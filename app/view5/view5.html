@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<title>We'd love to hear from you!</title>
-<meta charset="UTF-8">
     <div class="row">
         <div class="col-lg-12">
             <h2 class="page-header">Contact</h2>
         </div>
     </div>
-<form class="form-horizontal" role="form" ng-controller="FormCtrl">
-  <div class="form-group">
+    <form name="contactForm" class="form-horizontal" role="form">
+   <div class="form-group">
+      <div class="col-sm-4" ng-if="!contactForm.inputName.$pristine" ng-messages="contactForm.inputName.$error">
+        <div ng-message="required">Please enter your name.</div>
+      </div>
+    <br>
     <label for="inputName" class="col-sm-2 control-label">Name</label>
-    <div class="col-sm-4" ng-if="!contactForm.inputName.$pristine" ng-messages="contactForm.inputName.$error">
-      <input class="form-control" id="inputName" placeholder="Name" ng-model="formInfo.Name">
-      <span ng-show="nameRequired">{{nameRequired}}</span>
-    </div>
+       <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Name" ng-model="formInfo.Name" required>
+     </div>
   </div>
   <div class="form-group">
       <div class="col-sm-4" ng-if="!contactForm.inputEmail.$pristine" ng-messages="contactForm.inputEmail.$error">
@@ -24,7 +23,6 @@
     <label for="inputEmail" class="col-sm-2 control-label">Email</label>
     <div class="col-sm-4">
       <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" ng-model="formInfo.Email" required>
-      <span ng-show="emailRequired">{{emailRequired}}</span>
     </div>
   </div>
 
@@ -60,7 +58,7 @@
                     href="mailto:feedback@themonkees.com">feedback@themonkees.com</a></p>
             <p><i class="fa fa-clock-o"></i> <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
         </div><br/>
-</body>
+
 <div class="links">
     <div class="container">
         <div class="row">
@@ -71,4 +69,3 @@
     </div>
     </div>
     </div>
-</html>
