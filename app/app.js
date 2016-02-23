@@ -17,7 +17,7 @@ angular.module('myApp', [
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
 
-angular.module('myApp').controller('FormCtrl', ['$scope', function($scope) {
+/*angular.module('myApp').controller('FormCtrl', ['$scope', function($scope) {
     $scope.formInfo = {};
     $scope.saveData = function() {
       $scope.nameRequired = '';
@@ -40,4 +40,4 @@ angular.module('myApp').controller('FormCtrl', ['$scope', function($scope) {
         $scope.passwordRequired = 'Message Required';
       }
     };
-}]);
+}]);*/
