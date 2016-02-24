@@ -319,7 +319,7 @@ li:last-child {
             display: -webkit-flex;
             display: flex;
             float: left;
-            width: 1000px;
+            width: 200px;
             flex-direction: column;
             text-align: left;
             flex-flow: row wrap;
@@ -332,5 +332,14 @@ li:last-child {
         .slide {
             margin: 50px;
         }
+        .flexslider .slides > li {
+            display: none;
+            -webkit-backface-visibility: hidden;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .flexslider .slides img {
+            width: auto;
+            display: inline;}
     }
 }
