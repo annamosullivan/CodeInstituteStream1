@@ -1,6 +1,6 @@
  'use strict';
 
-angular.module('myApp.view4', ['ngRoute' ])
+angular.module('myApp.view4', ['ngRoute', 'concertsServices'])
 
  .config(['$routeProvider', function($routeProvider) {
    $routeProvider.when('/view4', {

@@ -17,7 +17,7 @@
   padding: 0;
   margin: 0;
   display: inline-block;
-    border-bottom:none;
+  border-bottom:none;
 }
 .nav li {
   font-family: 'Oswald', sans-serif;
@@ -330,7 +330,31 @@ li:last-child {
             align-content: space-around;
             border: 1px solid #ddd !important;
         }
-
+.controls{
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            align-items: left;
+            justify-content: space-around;
+            align-content: space-around;
+            border: 1px solid #ddd !important;
+}
+.col-sm-4 .col-sm-offset-2 .col-sm-10 .radio .checkbox{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: block;
+            float: left;
+            width: 200px;
+            flex-direction: column;
+            text-align: left;
+            flex-flow: row wrap;
+            align-items: left;
+            justify-content: space-around;
+            align-content: space-around;
+            clear: both;
+            border: 1px solid #ddd !important;
+}
         .slide {
             margin: 50px;
         }
@@ -341,7 +365,7 @@ li:last-child {
             text-align: center;
         }
         .flexslider .slides img {
-            width: auto;
+            width: 200px;
             display: inline;}
     }
 }
