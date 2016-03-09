@@ -1,0 +1,8 @@
+{
+  "firebase": "monkeesstream1",
+  "public": "app",
+  "ignore": [
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
