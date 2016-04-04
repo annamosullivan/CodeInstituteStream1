@@ -17,6 +17,7 @@ div {
   margin: 0;
   display: inline-block;
   border-bottom:none;
+    float: none;
 }
 .nav li {
   font-family: 'Oswald', sans-serif;
@@ -26,16 +27,25 @@ div {
   /*height: 100%;*/
   border-bottom: 1px solid #888;
   color: white;
+    float: none;
 }
 .nav a {
   text-decoration: none;
   color: #fff;
   display: block;
+    float: none;
   /*transition: .3s background-color;*/
 }
 .nav a:hover {
   background-color: #005f5f;
+  -webkit-backface-visibility: hidden;
 }
+.navbar-collapse.collapsing {
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    overflow: visible;
+  }
 li {
     border-right: 1px solid #bbb;
 }
@@ -52,13 +62,14 @@ li:last-child {
    /* width: 100%;*/
     background-color: #333;
    /* padding: 20px;*/
-
+    float: none;
 }
 }
 .nav a.active {
   background-color: #2e2e2e;
   color: #444444;
   cursor: default;
+    float: none;
 }
 
 .navbar>.navbar-default {
@@ -69,6 +80,7 @@ li:last-child {
         text-align: center;
         background-color: #333;
         margin-left: -80px;
+    float: none;
     }
 @media screen and (min-width: 600px) {
     .nav li {
@@ -77,6 +89,7 @@ li:last-child {
         /*height: 100%;*/
         /*line-height: 50px;*/
         font-size: 1.4em;
+        float: none;
     }
 
 
@@ -84,6 +97,7 @@ li:last-child {
     .nav li {
         display: inline-block;
         margin-right: -4px;
+        float: none;
     }
 
     .container-fluid {
@@ -156,6 +170,7 @@ li:last-child {
 
     .nav {
         text-align: center;
+        float: none;
     }
 
     .nav ul {
@@ -164,6 +179,7 @@ li:last-child {
         text-align: center;
         padding: 0;
         margin: 0;
+        float: none;
     }
 
     .nav li {
@@ -172,6 +188,7 @@ li:last-child {
         line-height: 40px;
         /*height: 40px;*/
         border-bottom: 1px solid #888;
+        float: none;
     }
 
     .nav a {
@@ -179,10 +196,13 @@ li:last-child {
         color: #fff;
         display: block;
         /*transition: .3s background-color;*/
+        float: none;
     }
 
     .nav a:hover {
         background-color: #005f5f;
+        float: none;
+        -webkit-backface-visibility: hidden;
     }
 
     @media (max-width: 650px) {
@@ -193,12 +213,14 @@ li:last-child {
             width: 100%;
             background: #444444;
             padding: 20px;
+            float: none;
         }
     }
     .nav a.active {
         background-color: #fff;
         color: #444444;
         cursor: default;
+        float: none;
     }
 
     .navbar > .navbar-default {
@@ -209,6 +231,7 @@ li:last-child {
         text-align: center;
         background-color: #444444;
         margin-left: -80px;
+        float: none;
     }
 
     @media screen and (min-width: 600px) {
@@ -218,12 +241,14 @@ li:last-child {
             /*height: 50px;*/
             /*line-height: 50px;*/
             font-size: 1.4em;
+            float: none;
         }
 
         /* Option 1 - Display Inline */
         .nav li {
             display: inline-block;
             margin-right: -4px;
+            
         }
 
         .label {
