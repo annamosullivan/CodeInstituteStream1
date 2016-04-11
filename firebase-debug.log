@@ -2,7 +2,7 @@
 [debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Anneos\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
 [debug] Platform:     win32
 [debug] Node Version: v4.2.4
-[debug] Time:         Tue Mar 08 2016 22:10:35 GMT+0000 (GMT Standard Time)
+[debug] Time:         Mon Apr 04 2016 23:15:52 GMT+0100 (GMT Summer Time)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/monkeesstream1/token?token=XXX 
@@ -13,6 +13,5 @@
 [info] === Deploying to 'monkeesstream1'...
 [info] 
 [info] i  deploying hosting
-[info] i  preparing . directory for upload...
-[warn] !  Warning: Public directory does not contain index.html
-[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/monkeesstream1/uploads/-KCNH2NQl8-fWdvgFHhv?token=XXX&fileCount=1132&message= 
+[info] i  preparing app directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/monkeesstream1/uploads/-KEYLB-6zCgeGVdMAX_m?token=XXX&fileCount=1125&message= 
